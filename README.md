@@ -1,16 +1,21 @@
-## Homework | Week 2
+## Movie Library
 
-Elimizde bir kitap listesi var. Bu uygulamanın 2 görevi var.
-1. Uygulama içerisindeki tüm kitapları çıktı olarak göstermek.
-2. Girdi olarak verilen kitap ismini varsa ekrana bastırmak yok ise kitabın mevcut olmadığına dair çıktı yazdırmak.
+This project made with Golang and contains a list of movies and movies can be searched.
 
-### list command
-```
+### Usage
+
+##### 1 - To show the list of movies
+```go
 go run main.go list
 ```
-Bu komut ile uygulama içerisindeki tüm kitapları çıktı olarak görmek istiyoruz.
-
-### search command 
-```
+##### 2 - To search the movie in a list
+```go
 go run main.go search <bookName>
-go run main.go search Lord of the Ring: The Return of 
+```
+The search command is not case sensitive.
+###### Example
+```go
+go run main.go search Requiem For A Dream 
+go run main.go search requiem for a dream
+```
+
